@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Jeffrey's Portfolio</title>
+	
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+		
+		body{
+			font-family:Arial,
+			sans-serif; 
+			background-color: #f4f6f9;
+			color:#333;
+			}
+		header{
+			background:#2e86de;
+			padding: 20px;
+			}
+		nav{
+			display:flex;
+			justify-content:center;
+			gap:30px;
+			}
+			
+		nav a{
+			color:white;
+			text-decoration:none;
+			font-weight:bold;
+			}
+			
+		nav a:hover{
+			text-decoration:underline;
+			}
+			
+		.hero{
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+			flex-wrap:wrap;
+			padding:60px;
+		}
+		
+		.hero-text{
+			flex:1;
+			min-width:300px;
+		}
+		.hero-text h1{
+			font-size:48px;
+			color:#2e86de;
+		}
+		.hero-text h2{
+			margin:15px 0;
+			color:#555;
+			}
+		.hero-text p{
+		font-size:18px;
+		line-height:1.6;
+		}
+		
+		button{
+			margin-top:20px;
+			padding:15px 30px;
+			background: #2e86de;
+			color:white;
+			border-radius:15px;
+			cursor:pointer;
+			}
+		button:hover{
+			background:#1b4f72;
+			}
+		.hero img{
+			width:280px;
+			border-radius:20px;
+			}
+		section{
+			padding:40px;
+			}
+		.skills,
+		.projects{
+			text-align:center;
+			}
+		.skills h2,
+		.projects h2{
+			color:#2e86de;
+			margin-bottom:20px;
+			}
+			.card-container{
+			display:flex;
+			justify-content:center;
+			gap: 20px;
+			flex-wrap:wrap;
+			margin-top: 20px;
+			
+			}
+			.card{
+			background:white;
+			width:220px;
+			padding:20px;
+			border-radius:10px;
+			box-shadow:0 4px 8px rgba(0,0,0, 0.2);
+			
+			}
+			.card h3{
+			color :#2e86de;
+			margin-bottom:10px;
+			}
+			
+			.card p{
+			color:#555;
+			}
+			
+		footer{
+		background:#2e86de;
+		color:white;
+		text-align:center;
+		padding:20px;
+		margin-top:40px;
+		}
+		
+	</style>
+	
+	</head>
+<body>
+	<header>
+		<nav>
+			<a href="#"> Home</a>
+			<a href="#"> About</a>
+			<a href="#"> Skills</a>
+			<a href="#"> Projects</a>
+			<a href="Contact.html"> Contact</a>
+				
+		</nav>
+	</header>	
+	<section class="hero">
+		<div class="hero-text">
+			<h1>Hello!, I'm Jeffrey</h1>
+			
+			<p> I love learning HTML, CSS, and Designing beautiful websites.This is my first Portfolio, where I showcase my skills and projects.
+			</p>
+			
+			<button> View My Work</button>
+		</div>	
+		
+		<div class="image-box">
+			<img src="https://scontent.facc1-1.fna.fbcdn.net/v/t39.30808-6/468528710_10235828265909504_2031577962503744792_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeEII31Ue-cyDogj6ILDqxo5ryqWEllP7cGvKpYSWU_twUqj2eFXrHXKyWKZ3EN4Rss&_nc_ohc=zG9GttFLIGQQ7kNvwEZM4o9&_nc_oc=Adp-kWtg9Wde3te5S3kWnLmOBWtIkXyVnc_bt8bqRTQIIpVxHCyUGeM39EHpxPGPqps&_nc_zt=23&_nc_ht=scontent.facc1-1.fna&_nc_gid=RLTF4HVc62m9f_J_6YxVJg&_nc_ss=7b2a8&oh=00_AQD2olRk5H-XqmbY8F0R0luPjZHoFxKkmye5rusl1v33lg&oe=6A63D82D">
+		</div>
+	
+	</section>
+
+
+	<section class="skills">
+		<h2> My Skills</h2>
+		
+		<div class="card-container">
+			<div class="card">
+				<h3>HTML</h3>
+				<p>Creating the structure  and content of  web pages.</p>
+			</div>
+			
+			<div class="card">
+				<h3>CSS</h3>
+				<p>Styling  websites with color, layouts, snd animations.</p>
+			</div>
+			
+			<div class="card">
+				<h3>Figma</h3>
+				<p>Design user interfaces and websites mockups.</p>
+			</div>
+		</div>
+	</section>
+	
+	   <footer>
+        <p>&copy; 2026 Jeffrey's Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+
+
+
+
+</html>
