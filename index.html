@@ -1,186 +1,715 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	 <meta charset="UTF-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Jeffrey's Portfolio</title>
-	
-	<style>
-		*{
-			margin:0;
-			padding:0;
-			box-sizing:border-box;
-		}
-		
-		body{
-			font-family:Arial,
-			sans-serif; 
-			background-color: #f4f6f9;
-			color:#333;
-			}
-		header{
-			background:#2e86de;
-			padding: 20px;
-			}
-		nav{
-			display:flex;
-			justify-content:center;
-			gap:30px;
-			}
-			
-		nav a{
-			color:white;
-			text-decoration:none;
-			font-weight:bold;
-			}
-			
-		nav a:hover{
-			text-decoration:underline;
-			}
-			
-		.hero{
-			display:flex;
-			justify-content:space-between;
-			align-items:center;
-			flex-wrap:wrap;
-			padding:60px;
-		}
-		
-		.hero-text{
-			flex:1;
-			min-width:300px;
-		}
-		.hero-text h1{
-			font-size:48px;
-			color:#2e86de;
-		}
-		.hero-text h2{
-			margin:15px 0;
-			color:#555;
-			}
-		.hero-text p{
-		font-size:18px;
-		line-height:1.6;
-		}
-		
-		button{
-			margin-top:20px;
-			padding:15px 30px;
-			background: #2e86de;
-			color:white;
-			border-radius:15px;
-			cursor:pointer;
-			}
-		button:hover{
-			background:#1b4f72;
-			}
-		.hero img{
-			width:280px;
-			border-radius:20px;
-			}
-		section{
-			padding:40px;
-			}
-		.skills,
-		.projects{
-			text-align:center;
-			}
-		.skills h2,
-		.projects h2{
-			color:#2e86de;
-			margin-bottom:20px;
-			}
-			.card-container{
-			display:flex;
-			justify-content:center;
-			gap: 20px;
-			flex-wrap:wrap;
-			margin-top: 20px;
-			
-			}
-			.card{
-			background:white;
-			width:220px;
-			padding:20px;
-			border-radius:10px;
-			box-shadow:0 4px 8px rgba(0,0,0, 0.2);
-			
-			}
-			.card h3{
-			color :#2e86de;
-			margin-bottom:10px;
-			}
-			
-			.card p{
-			color:#555;
-			}
-			
-		footer{
-		background:#2e86de;
-		color:white;
-		text-align:center;
-		padding:20px;
-		margin-top:40px;
-		}
-		
-	</style>
-	
-	</head>
+
+    <meta name="description" content="Jeffrey Vava - Cybersecurity Analyst, Technology Educator and Developer.">
+    <meta name="author" content="Jeffrey Vava">
+
+    <title>Jeffrey Vava | Cybersecurity Analyst & Technology Educator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
 <body>
-	<header>
-		<nav>
-			<a href="#"> Home</a>
-			<a href="#"> About</a>
-			<a href="#"> Skills</a>
-			<a href="#"> Projects</a>
-			<a href="Contact.html"> Contact</a>
-				
-		</nav>
-	</header>	
-	<section class="hero">
-		<div class="hero-text">
-			<h1>Hello!, I'm Jeffrey</h1>
-			
-			<p> I love learning HTML, CSS, and Designing beautiful websites.This is my first Portfolio, where I showcase my skills and projects.
-			</p>
-			
-			<button> View My Work</button>
-		</div>	
-		
-		<div class="image-box">
-			<img src="https://scontent.facc1-1.fna.fbcdn.net/v/t39.30808-6/468528710_10235828265909504_2031577962503744792_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1365&ctp=s2048x1365&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeEII31Ue-cyDogj6ILDqxo5ryqWEllP7cGvKpYSWU_twUqj2eFXrHXKyWKZ3EN4Rss&_nc_ohc=zG9GttFLIGQQ7kNvwEZM4o9&_nc_oc=Adp-kWtg9Wde3te5S3kWnLmOBWtIkXyVnc_bt8bqRTQIIpVxHCyUGeM39EHpxPGPqps&_nc_zt=23&_nc_ht=scontent.facc1-1.fna&_nc_gid=RLTF4HVc62m9f_J_6YxVJg&_nc_ss=7b2a8&oh=00_AQD2olRk5H-XqmbY8F0R0luPjZHoFxKkmye5rusl1v33lg&oe=6A63D82D">
-		</div>
-	
-	</section>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>J</span>V
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+
+    </nav>
+</header>
 
 
-	<section class="skills">
-		<h2> My Skills</h2>
-		
-		<div class="card-container">
-			<div class="card">
-				<h3>HTML</h3>
-				<p>Creating the structure  and content of  web pages.</p>
-			</div>
-			
-			<div class="card">
-				<h3>CSS</h3>
-				<p>Styling  websites with color, layouts, snd animations.</p>
-			</div>
-			
-			<div class="card">
-				<h3>Figma</h3>
-				<p>Design user interfaces and websites mockups.</p>
-			</div>
-		</div>
-	</section>
-	
-	   <footer>
-        <p>&copy; 2026 Jeffrey's Portfolio. All Rights Reserved.</p>
-    </footer>
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-heading">
+            CYBERSECURITY • TECHNOLOGY • EDUCATION
+        </p>
+
+        <h1>
+            Hi, I'm <span>Jeffrey Vava</span>
+        </h1>
+
+        <h2>
+            Cybersecurity Analyst & Technology Educator
+        </h2>
+
+        <p class="hero-description">
+            I work at the intersection of cybersecurity, technology,
+            automation and education. I investigate security incidents,
+            work with modern security platforms, build technology projects,
+            and help students develop practical digital and coding skills.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn primary-btn">
+                View My Work
+            </a>
+
+            <a href="Contact.html" class="btn secondary-btn">
+                Get In Touch
+            </a>
+
+        </div>
+
+        <div class="social-links">
+
+            <!-- Replace # with your real profiles -->
+
+            <a href="#" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="#" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="mailto:jvava911@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <!--
+        IMPORTANT:
+        Save your profile photo inside your GitHub repository:
+        images/profile.jpg
+
+        Then use this image instead of the old Facebook URL.
+        -->
+
+        <img src="images/profile.jpg"
+             alt="Jeffrey Vava">
+
+        <div class="image-badge">
+            <i class="fas fa-shield-halved"></i>
+            Cybersecurity Professional
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section about">
+
+    <div class="section-title">
+        <p>GET TO KNOW ME</p>
+        <h2>About Me</h2>
+    </div>
+
+    <div class="about-grid">
+
+        <div class="about-text">
+
+            <h3>
+                Building secure technology and helping people understand it.
+            </h3>
+
+            <p>
+                I am a Cybersecurity Analyst with professional experience
+                in Security Operations, incident investigation, security
+                monitoring and threat detection.
+            </p>
+
+            <p>
+                My work involves investigating security alerts, analysing
+                events and logs, identifying suspicious activity, improving
+                detection and response processes, and working with security
+                technologies across enterprise environments.
+            </p>
+
+            <p>
+                Beyond cybersecurity, I am passionate about technology
+                education. I teach students practical skills in Python,
+                HTML, CSS, machine learning, IoT, Scratch, PictoBlox and
+                other technology platforms.
+            </p>
+
+            <p>
+                I believe technology education should be practical,
+                creative and accessible — especially for young people
+                discovering programming and engineering for the first time.
+            </p>
+
+        </div>
+
+
+        <div class="about-cards">
+
+            <div class="info-card">
+                <i class="fas fa-shield-halved"></i>
+                <h3>Cybersecurity</h3>
+                <p>
+                    Security monitoring, incident response,
+                    threat detection and security operations.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-code"></i>
+                <h3>Development</h3>
+                <p>
+                    Python, HTML, CSS and practical technology projects.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Education</h3>
+                <p>
+                    Teaching coding, digital skills and emerging
+                    technologies.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-robot"></i>
+                <h3>Technology</h3>
+                <p>
+                    Machine learning, automation, IoT and
+                    creative computing.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section skills-section">
+
+    <div class="section-title">
+        <p>WHAT I WORK WITH</p>
+        <h2>Technical Skills</h2>
+    </div>
+
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-shield-halved"></i>
+            </div>
+
+            <h3>Cybersecurity</h3>
+
+            <p>
+                Security Operations, Incident Response,
+                Threat Detection, Security Monitoring,
+                Vulnerability Management and Threat Hunting.
+            </p>
+        </div>
+
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-chart-line"></i>
+            </div>
+
+            <h3>Security Operations</h3>
+
+            <p>
+                Microsoft Sentinel, Microsoft Defender,
+                Entra ID, Defender for Identity and
+                enterprise security monitoring.
+            </p>
+        </div>
+
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-terminal"></i>
+            </div>
+
+            <h3>Programming</h3>
+
+            <p>
+                Python, HTML, CSS and programming fundamentals
+                for practical automation and application projects.
+            </p>
+        </div>
+
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-brain"></i>
+            </div>
+
+            <h3>AI & Machine Learning</h3>
+
+            <p>
+                Computer vision, image classification,
+                machine learning projects and AI-based
+                educational applications.
+            </p>
+        </div>
+
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-network-wired"></i>
+            </div>
+
+            <h3>Infrastructure</h3>
+
+            <p>
+                Network security, firewalls, syslog,
+                Linux systems, cloud monitoring and
+                enterprise infrastructure.
+            </p>
+        </div>
+
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-chalkboard-user"></i>
+            </div>
+
+            <h3>Technology Education</h3>
+
+            <p>
+                Coding education, digital literacy,
+                Python, Web Design, Scratch, PictoBlox,
+                IoT and student project development.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SECURITY TECHNOLOGY ================= -->
+
+<section class="section technology-section">
+
+    <div class="section-title">
+        <p>SECURITY TECHNOLOGY</p>
+        <h2>Tools & Platforms</h2>
+    </div>
+
+    <div class="technology-list">
+
+        <span><i class="fas fa-shield"></i> Microsoft Sentinel</span>
+
+        <span><i class="fas fa-shield-halved"></i> Microsoft Defender</span>
+
+        <span><i class="fas fa-user-lock"></i> Microsoft Entra ID</span>
+
+        <span><i class="fas fa-search"></i> Threat Hunting</span>
+
+        <span><i class="fas fa-bug"></i> Vulnerability Management</span>
+
+        <span><i class="fas fa-network-wired"></i> Network Security</span>
+
+        <span><i class="fas fa-server"></i> Linux / Syslog</span>
+
+        <span><i class="fas fa-cloud"></i> Cloud Security</span>
+
+        <span><i class="fas fa-fire"></i> Firewall Security</span>
+
+        <span><i class="fas fa-code"></i> KQL</span>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience" class="section experience">
+
+    <div class="section-title">
+        <p>MY PROFESSIONAL JOURNEY</p>
+        <h2>Experience</h2>
+    </div>
+
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <span class="timeline-label">
+                    CYBERSECURITY
+                </span>
+
+                <h3>Cybersecurity Analyst</h3>
+
+                <h4>Security Operations</h4>
+
+                <p>
+                    Security monitoring and incident response within
+                    an enterprise environment. Responsibilities include
+                    investigating security alerts, analysing logs,
+                    identifying threats, escalating incidents and
+                    improving security operations processes.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <span class="timeline-label">
+                    EDUCATION
+                </span>
+
+                <h3>Technology & Coding Tutor</h3>
+
+                <h4>Programming & Digital Skills</h4>
+
+                <p>
+                    Teaching students practical technology skills,
+                    including Python, Web Design, machine learning,
+                    Scratch, PictoBlox, App Inventor and IoT.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <span class="timeline-label">
+                    COMMUNITY & TRAINING
+                </span>
+
+                <h3>Technology Facilitator</h3>
+
+                <h4>Coding & Digital Education</h4>
+
+                <p>
+                    Supporting technology education initiatives and
+                    helping learners develop practical programming and
+                    digital problem-solving skills.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section projects">
+
+    <div class="section-title">
+        <p>SELECTED WORK</p>
+        <h2>Projects</h2>
+    </div>
+
+
+    <div class="project-grid">
+
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="project-content">
+
+                <span>CYBERSECURITY</span>
+
+                <h3>Security Operations & Threat Detection</h3>
+
+                <p>
+                    Security monitoring and investigation workflows
+                    involving security alerts, incident response,
+                    threat hunting and detection engineering.
+                </p>
+
+                <div class="project-tags">
+                    <span>SIEM</span>
+                    <span>Incident Response</span>
+                    <span>KQL</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fas fa-face-smile"></i>
+            </div>
+
+            <div class="project-content">
+
+                <span>ARTIFICIAL INTELLIGENCE</span>
+
+                <h3>Face Detection Door Unlocking System</h3>
+
+                <p>
+                    A computer vision project exploring face detection
+                    and automated access control using Python and
+                    PictoBlox.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Computer Vision</span>
+                    <span>PictoBlox</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fas fa-gamepad"></i>
+            </div>
+
+            <div class="project-content">
+
+                <span>EDUCATIONAL TECHNOLOGY</span>
+
+                <h3>Interactive Coding Projects</h3>
+
+                <p>
+                    Interactive programming projects designed to help
+                    students learn programming, logic, computer vision
+                    and creative technology.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Scratch</span>
+                    <span>PictoBlox</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                <i class="fas fa-globe"></i>
+            </div>
+
+            <div class="project-content">
+
+                <span>WEB DEVELOPMENT</span>
+
+                <h3>Web Design Projects</h3>
+
+                <p>
+                    Responsive websites created using HTML and CSS,
+                    focusing on clean layouts, usability and
+                    professional presentation.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>UI Design</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION / TEACHING ================= -->
+
+<section class="section teaching">
+
+    <div class="teaching-content">
+
+        <div>
+
+            <p class="small-heading">
+                TECHNOLOGY EDUCATION
+            </p>
+
+            <h2>
+                I don't just use technology.<br>
+                <span>I teach others how to build with it.</span>
+            </h2>
+
+            <p>
+                I enjoy helping students move from simply using
+                technology to understanding how it works and creating
+                their own projects.
+            </p>
+
+        </div>
+
+
+        <div class="teaching-topics">
+
+            <div>
+                <i class="fab fa-python"></i>
+                <span>Python</span>
+            </div>
+
+            <div>
+                <i class="fas fa-code"></i>
+                <span>Web Design</span>
+            </div>
+
+            <div>
+                <i class="fas fa-robot"></i>
+                <span>Machine Learning</span>
+            </div>
+
+            <div>
+                <i class="fas fa-microchip"></i>
+                <span>IoT</span>
+            </div>
+
+            <div>
+                <i class="fas fa-gamepad"></i>
+                <span>Scratch</span>
+            </div>
+
+            <div>
+                <i class="fas fa-cubes"></i>
+                <span>PictoBlox</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div>
+
+        <p>LET'S CONNECT</p>
+
+        <h2>
+            Have a project, idea or opportunity?
+        </h2>
+
+        <p>
+            I'm always interested in technology, cybersecurity,
+            education and innovative projects.
+        </p>
+
+        <a href="Contact.html" class="btn primary-btn">
+            Contact Me
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>Jeffrey Vava</h3>
+
+            <p>
+                Cybersecurity Analyst • Technology Educator • Developer
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="Contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <p>
+            © 2026 Jeffrey Vava. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
 </body>
-
-
-
-
 </html>
